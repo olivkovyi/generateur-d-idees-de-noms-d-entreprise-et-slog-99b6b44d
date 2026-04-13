@@ -1,0 +1,295 @@
+{
+  "run_id": "run-1776039696223",
+  "job_index": 3,
+  "params": {
+    "owner_user_id": "user-1774822953462",
+    "owner_username": "admin",
+    "owner_display_name": "Administrator",
+    "count": 3,
+    "archetype": "generator",
+    "market": "France",
+    "language": "fr",
+    "country": "FR",
+    "brief": "Un assistant créatif pour entrepreneurs en phase de lancement, offrant des suggestions basées sur le secteur…",
+    "notes": "Trouvez le nom parfait pour votre startup ou nouvelle activité, et générez des slogans accrocheurs pour marquer les esprits.\nOutil de génération pour la création de noms et slogans. L'approche est 'sérieuse mais amusante' pour stimuler la créativité.",
+    "import_notes": "",
+    "growth_job_id": "",
+    "growth_slug": "",
+    "growth_kind": "",
+    "mode": "production",
+    "run_kind": "generated_batch",
+    "publish_target": "render",
+    "requested_publish_target": "render",
+    "railway_project_id_override": "",
+    "railway_environment_id_override": "",
+    "railway_service_id_override": "",
+    "railway_service_name_override": "",
+    "github_repo_private": true,
+    "stage_models": {
+      "ideation": "google/gemini-2.5-flash-lite:nitro",
+      "spec": "google/gemini-2.5-flash",
+      "copy": "google/gemini-2.5-flash-lite:nitro",
+      "qa": "anthropic/claude-haiku-4.5",
+      "escalation": "anthropic/claude-sonnet-4.6"
+    },
+    "archetype_display": "mixed batch",
+    "archetype_mix": [
+      "tool",
+      "calculator",
+      "generator"
+    ],
+    "forced_design_theme": "serious-fun",
+    "forced_structure_preset": "tool-first-rail",
+    "site_idea_title": "Générateur d'Idées de Noms d'Entreprise et Slogans Originaux",
+    "site_idea_summary": "Trouvez le nom parfait pour votre startup ou nouvelle activité, et générez des slogans accrocheurs pour marquer les esprits."
+  },
+  "site_spec": {
+    "slug": "generateur-d-idees-de-noms-d-entreprise-et-slog-99b6b44d",
+    "theme": {
+      "name": "Serious Fun",
+      "slug": "serious-fun",
+      "eyebrow": "Playful Precision",
+      "family": "serious-fun",
+      "moods": [
+        "playful",
+        "smart",
+        "optimistic",
+        "professional"
+      ],
+      "archetypes": [
+        "tool",
+        "generator"
+      ],
+      "niches": [
+        "team tools",
+        "education",
+        "community tools",
+        "simple utility",
+        "content tools"
+      ],
+      "keywords": [
+        "joy",
+        "playful",
+        "smart",
+        "friendly",
+        "color"
+      ],
+      "token_index": [
+        "color",
+        "community",
+        "content",
+        "education",
+        "friendly",
+        "fun",
+        "generator",
+        "joy",
+        "optimistic",
+        "playful",
+        "precision",
+        "professional",
+        "serious",
+        "simple",
+        "smart",
+        "team",
+        "tool",
+        "tools",
+        "utility"
+      ],
+      "font_embed": "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap",
+      "display_font": "\"Outfit\", sans-serif",
+      "body_font": "\"Inter\", sans-serif",
+      "layout": "split",
+      "card_style": "glass",
+      "button_style": "gradient",
+      "decor_style": "ribbons",
+      "hero_template": "1.08fr 0.92fr",
+      "seo_template": "1.18fr 0.82fr",
+      "feature_columns": 3,
+      "faq_columns": 3,
+      "hero_min_height": "78vh",
+      "panel_radius": "28px",
+      "card_radius": "26px",
+      "chip_radius": "999px",
+      "button_radius": "18px",
+      "outline_width": "1px",
+      "backdrop_blur": "16px",
+      "palette": {
+        "bg": "linear-gradient(150deg, #eff6ff 0%, #dbeafe 32%, #fde68a 100%)",
+        "surface": "rgba(255,255,255,0.86)",
+        "surface_border": "rgba(37,99,235,0.12)",
+        "text": "#172554",
+        "muted": "#475569",
+        "accent": "#2563eb",
+        "accent_alt": "#f97316",
+        "hero_glow": "rgba(249, 115, 22, 0.15)",
+        "button_text": "#f8fafc",
+        "panel_alt": "rgba(255,255,255,0.66)",
+        "shadow": "0 24px 62px rgba(37, 99, 235, 0.1)",
+        "input_fill": "rgba(255,255,255,0.54)"
+      }
+    },
+    "structure": {
+      "name": "Tool First Rail",
+      "slug": "tool-first-rail",
+      "hero_variant": "tool-first",
+      "proof_variant": "checklist",
+      "section_order": [
+        "proof",
+        "features",
+        "seo",
+        "faq"
+      ],
+      "feature_columns": 2,
+      "faq_columns": 2,
+      "family": "interaction-forward",
+      "moods": [
+        "direct",
+        "practical",
+        "fast"
+      ],
+      "archetypes": [
+        "tool",
+        "calculator",
+        "generator"
+      ],
+      "niches": [
+        "qr",
+        "validators",
+        "quick utilities",
+        "lead tools"
+      ],
+      "keywords": [
+        "interaction",
+        "fast",
+        "widget",
+        "action"
+      ],
+      "token_index": [
+        "action",
+        "calculator",
+        "checklist",
+        "direct",
+        "faq",
+        "fast",
+        "features",
+        "first",
+        "forward",
+        "generator",
+        "interaction",
+        "lead",
+        "practical",
+        "proof",
+        "quick",
+        "rail",
+        "seo",
+        "tool",
+        "tools",
+        "utilities",
+        "validators",
+        "widget"
+      ]
+    },
+    "render_direction": "worksheet-flow",
+    "render_direction_name": "Worksheet Flow",
+    "page_blueprint": "worksheet-cascade",
+    "page_blueprint_name": "Worksheet Cascade",
+    "title": "Générateur d'Idées de Noms d'Entreprise et Slogans Originaux",
+    "tagline": "Votre Idée en quelques mots",
+    "description": "Trouvez le nom parfait pour votre startup ou nouvelle activité, et générez des slogans accrocheurs pour marquer les esprits.",
+    "feature_prefix": "Bloc",
+    "action": "Générer les slogans",
+    "cta_primary": "Générer les Idées",
+    "cta_secondary": "Consulter la FAQ",
+    "inputs": [
+      {
+        "id": "keywords",
+        "label": "Mots-clés de marque",
+        "type": "text",
+        "placeholder": "impact, futur, confiance",
+        "weight": 1.0
+      },
+      {
+        "id": "sector",
+        "label": "Secteur",
+        "type": "text",
+        "placeholder": "cosmétique, SaaS, mobilité",
+        "weight": 1.0
+      },
+      {
+        "id": "tone",
+        "label": "Ton recherché",
+        "type": "select",
+        "options": [
+          {
+            "id": "premium",
+            "label": "Premium",
+            "multiplier": 1
+          },
+          {
+            "id": "direct",
+            "label": "Direct",
+            "multiplier": 1
+          },
+          {
+            "id": "warm",
+            "label": "Warm",
+            "multiplier": 1
+          },
+          {
+            "id": "bold",
+            "label": "Bold",
+            "multiplier": 1
+          }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "hero_metrics": [
+      {
+        "value": "Worksheet Flow",
+        "label": "Cadence"
+      },
+      {
+        "value": "3",
+        "label": "Entrées"
+      },
+      {
+        "value": "Slogans proposés",
+        "label": "Sortie"
+      }
+    ],
+    "trust_labels": [
+      "Worksheet Flow",
+      "Générer les Idées",
+      "Slogans proposés",
+      "Utilitaire immédiat",
+      "Structure SEO claire"
+    ],
+    "result_label": "Slogans proposés",
+    "result_unit": "",
+    "runtime_mode": "slogan_generator",
+    "page_variant": "classic",
+    "faq_topic": "Générateur d'Idées de Noms d'Entreprise et Slogans Originaux",
+    "faq_entries": [
+      {
+        "question": "Pourquoi utiliser cet outil pour Générateur d'Idées de Noms d'Entreprise et Slogans Originaux ?",
+        "answer": "Il aide à cadrer le besoin rapidement et à orienter vers une prochaine action claire sur le marché France."
+      },
+      {
+        "question": "Le résultat est-il immédiat ?",
+        "answer": "Oui. L'interface est pensée pour une réponse rapide, lisible et exploitable dès la première interaction."
+      },
+      {
+        "question": "Cette page est-elle adaptée au SEO ?",
+        "answer": "Oui. La structure mélange utilité, clarté éditoriale et signaux de confiance sans surcharger l'expérience."
+      }
+    ],
+    "seo_paragraphs": [
+      "Cette page capte une intention forte autour de Générateur d'Idées de Noms d'Entreprise et Slogans Originaux et la transforme en action utile pour un public situé sur France.",
+      "Le format hero-first accélère la compréhension, réduit les frictions et améliore la lisibilité sur mobile comme sur desktop.",
+      "Le socle reste volontairement simple pour faciliter les tests, la QA continue et les variations SEO."
+    ],
+    "document_html": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Générateur d&#x27;Idées de Noms d&#x27;Entreprise et Slogans Originaux | Votre Idée en quelques mots</title>\n    <meta name=\"description\" content=\"Trouvez le nom parfait pour votre startup ou nouvelle activité, et générez des slogans accrocheurs pour marquer les esprits.\">\n    <style>\n        :root {\n            --color-primary: #5A67D8;\n            --color-primary-light: #C3DAFE;\n            --color-secondary: #EDF2F7;\n            --color-text: #2D3748;\n            --color-background: #F7FAFC;\n            --color-border: #E2E8F0;\n            --font-family-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;\n            --font-family-mono: 'SF Mono', 'Roboto Mono', monospace;\n            --spacing-unit: 8px;\n        }\n\n        body {\n            font-family: var(--font-family-sans);\n            color: var(--color-text);\n            background-color: var(--color-background);\n            line-height: 1.6;\n            margin: 0;\n            padding: 0;\n            display: flex;\n            flex-direction: column;\n            min-height: 100vh;\n        }\n\n        header {\n            background-color: var(--color-primary);\n            color: white;\n            padding: calc(4 * var(--spacing-unit)) calc(2 * var(--spacing-unit));\n            text-align: center;\n        }\n\n        header h1 {\n            font-size: 2.5rem;\n            margin-bottom: var(--spacing-unit);\n            font-weight: 700;\n        }\n\n        header p {\n            font-size: 1.1rem;\n            max-width: 700px;\n            margin: 0 auto;\n        }\n\n        .container {\n            max-width: 900px;\n            margin: calc(4 * var(--spacing-unit)) auto;\n            padding: 0 calc(2 * var(--spacing-unit));\n            flex-grow: 1;\n        }\n\n        .section {\n            background-color: white;\n            border-radius: 8px;\n            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n            padding: calc(4 * var(--spacing-unit));\n            margin-bottom: calc(4 * var(--spacing-unit));\n            border: 1px solid var(--color-border);\n        }\n\n        h2 {\n            font-size: 1.8rem;\n            color: var(--color-primary);\n            margin-top: 0;\n            margin-bottom: calc(3 * var(--spacing-unit));\n            border-bottom: 2px solid var(--color-primary-light);\n            padding-bottom: var(--spacing-unit);\n        }\n\n        .form-group {\n            margin-bottom: calc(2 * var(--spacing-unit));\n        }\n\n        label {\n            display: block;\n            margin-bottom: var(--spacing-unit);\n            font-weight: 600;\n            color: var(--color-text);\n        }\n\n        input[type=\"text\"],\n        textarea,\n        select {\n            width: 100%;\n            padding: calc(1.5 * var(--spacing-unit));\n            border: 1px solid var(--color-border);\n            border-radius: 4px;\n            font-size: 1rem;\n            font-family: var(--font-family-sans);\n            box-sizing: border-box;\n            transition: border-color 0.2s ease;\n        }\n\n        input[type=\"text\"]:focus,\n        textarea:focus,\n        select:focus {\n            border-color: var(--color-primary);\n            outline: none;\n        }\n\n        textarea {\n            min-height: 100px;\n            resize: vertical;\n        }\n\n        button {\n            background-color: var(--color-primary);\n            color: white;\n            padding: calc(1.5 * var(--spacing-unit)) calc(3 * var(--spacing-unit));\n            border: none;\n            border-radius: 4px;\n            font-size: 1.1rem;\n            font-weight: 600;\n            cursor: pointer;\n            transition: background-color 0.3s ease, transform 0.1s ease;\n            display: inline-flex;\n            align-items: center;\n            justify-content: center;\n        }\n\n        button:hover {\n            background-color: #4A55B8;\n        }\n\n        button:active {\n            transform: translateY(1px);\n        }\n\n        .result-area {\n            margin-top: calc(4 * var(--spacing-unit));\n            padding-top: calc(4 * var(--spacing-unit));\n            border-top: 1px dashed var(--color-border);\n        }\n\n        .result-area h3 {\n            font-size: 1.5rem;\n            color: var(--color-primary);\n            margin-bottom: calc(2 * var(--spacing-unit));\n        }\n\n        .result-group {\n            margin-bottom: calc(3 * var(--spacing-unit));\n        }\n\n        .result-group h4 {\n            font-size: 1.2rem;\n            color: var(--color-text);\n            margin-bottom: var(--spacing-unit);\n            position: relative;\n            padding-left: calc(2 * var(--spacing-unit));\n        }\n        .result-group h4::before {\n            content: '›';\n            position: absolute;\n            left: 0;\n            color: var(--color-primary);\n            font-weight: bold;\n        }\n\n        .result-list {\n            list-style: none;\n            padding: 0;\n        }\n\n        .result-list li {\n            background-color: var(--color-secondary);\n            border: 1px solid var(--color-border);\n            border-radius: 4px;\n            padding: calc(1.5 * var(--spacing-unit));\n            margin-bottom: var(--spacing-unit);\n            font-family: var(--font-family-mono);\n            font-size: 0.95rem;\n            word-break: break-word;\n        }\n\n        footer {\n            background-color: var(--color-text);\n            color: white;\n            padding: calc(4 * var(--spacing-unit)) calc(2 * var(--spacing-unit));\n            margin-top: calc(8 * var(--spacing-unit));\n            text-align: center;\n            font-size: 0.9rem;\n        }\n\n        .seo-section {\n            padding: calc(4 * var(--spacing-unit)) calc(2 * var(--spacing-unit));\n            max-width: 900px;\n            margin: 0 auto;\n            font-size: 0.9rem;\n            color: #4A5568;\n            line-height: 1.8;\n            background-color: var(--color-background);\n        }\n\n        .seo-section h3 {\n            color: var(--color-primary);\n            font-size: 1.5rem;\n            margin-bottom: calc(2 * var(--spacing-unit));\n            text-align: center;\n        }\n\n        .seo-section p {\n            margin-bottom: calc(1.5 * var(--spacing-unit));\n        }\n\n        .seo-section ul {\n            list-style: disc inside;\n            padding-left: 0;\n            margin-bottom: calc(1.5 * var(--spacing-unit));\n        }\n\n        .seo-section li {\n            margin-bottom: var(--spacing-unit);\n        }\n    </style>\n    <meta name=\"robots\" content=\"index, follow\">\n    <link rel=\"canonical\" href=\"https://generateur-d-idees-de-noms-d-entreprise-et-slog-99b6b44d.onrender.com\">\n    <meta property=\"og:title\" content=\"Générateur d&#x27;Idées de Noms d&#x27;Entreprise et Slogans Originaux\">\n    <meta property=\"og:description\" content=\"Trouvez le nom parfait pour votre startup ou nouvelle activité, et générez des slogans accrocheurs pour marquer les esprits.\">\n    <meta property=\"og:url\" content=\"https://generateur-d-idees-de-noms-d-entreprise-et-slog-99b6b44d.onrender.com\">\n    <meta property=\"og:type\" content=\"website\">\n    <script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Générateur d'Idées de Noms d'Entreprise et Slogans Originaux\", \"description\": \"Trouvez le nom parfait pour votre startup ou nouvelle activité, et générez des slogans accrocheurs pour marquer les esprits.\", \"url\": \"https://generateur-d-idees-de-noms-d-entreprise-et-slog-99b6b44d.onrender.com\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Web Browser\"}</script>\n</head>\n<body data-site-slug=\"generateur-d-idees-de-noms-d-entreprise-et-slog-99b6b44d\" data-runtime-mode=\"slogan_generator\">\n    <header>\n        <h1>Lancez Votre Marque avec un Nom qui Compte</h1>\n        <p>Trouvez le nom parfait pour votre startup ou nouvelle activité, et générez des slogans accrocheurs pour marquer les esprits.</p>\n    </header>\n\n    <main class=\"container\">\n        <section class=\"section\">\n            <h2>Votre Idée en quelques mots</h2>\n            <form id=\"tool-form\">\n                <div class=\"form-group\">\n                    <label for=\"secteur\">Quel est votre secteur d'activité ?</label>\n                    <input type=\"text\" id=\"secteur\" placeholder=\"Ex: e-commerce de produits artisanaux, agence de marketing digital...\" required>\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"motsCles\">Mots-clés ou concepts clés (séparés par des virgules) :</label>\n                    <input type=\"text\" id=\"motsCles\" placeholder=\"Ex: durable, innovation, local, simple, joyeux\">\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"publicCible\">Décrivez votre public cible :</label>\n                    <textarea id=\"publicCible\" placeholder=\"Ex: jeunes urbains soucieux de l'environnement, PME traditionnelles, familles avec enfants en bas âge...\"></textarea>\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"tonalite\">Quelle tonalité souhaitez-vous pour votre marque ?</label>\n                    <select id=\"tonalite\">\n                        <option value=\"professionnel\">Professionnel et sérieux</option>\n                        <option value=\"creatif\">Créatif et innovant</option>\n                        <option value=\"amical\">Amical et accessible</option>\n                        <option value=\"dynamique\">Dynamique et moderne</option>\n                        <option value=\"luxe\">Élégant et luxueux</option>\n                        <option value=\"ludique\">Ludique et amusant</option>\n                    </select>\n                </div>\n                <button type=\"submit\" id=\"tool-submit\">Générer les Idées</button>\n            </form>\n        </section>\n\n        <section class=\"section result-area\" id=\"tool-result\" style=\"display: none;\">\n            <h2 id=\"result-headline\">Vos Idées de Noms et Slogans</h2>\n            <div id=\"result-content\"></div>\n        </section>\n    </main>\n\n    <section class=\"seo-section\">\n        <h3>Pourquoi un nom et un slogan percutants sont essentiels pour votre entreprise ?</h3>\n        <p>Dans l'écosystème entrepreneurial français, se démarquer est une nécessité. Un nom d'entreprise mémorable et un slogan accrocheur ne sont pas de simples détails esthétiques ; ils sont le fondement de votre identité de marque, le premier point de contact avec vos clients potentiels et un pilier de votre stratégie marketing.</p>\n        <p>Un bon nom d'entreprise doit être :</p>\n        <ul>\n            <li><strong>Unique et disponible :</strong> Pour éviter les confusions et les problèmes juridiques, et garantir une présence en ligne sans heurts (nom de domaine, réseaux sociaux).</li>\n            <li><strong>Mémorable :</strong> Facile à retenir et à prononcer, il doit rester gravé dans l'esprit de vos clients.</li>\n            <li><strong>Pertinent :</strong> Il doit évoquer votre activité, vos valeurs ou les bénéfices que vous apportez.</li>\n            <li><strong>Évolutif :</strong> Assez large pour accompagner la croissance et les éventuelles diversifications de votre offre.</li>\n        </ul>\n        <p>Quant au slogan, c'est la promesse de votre marque en quelques mots. Il clarifie votre proposition de valeur, communique votre positionnement et insuffle de la personnalité à votre entreprise. Qu'il soit informatif, émotionnel ou incitatif, un bon slogan renforce la reconnaissance de votre marque et engage votre audience.</p>\n        <p>Notre générateur vous aide à naviguer dans ce processus créatif, en vous offrant des pistes innovantes adaptées au marché français, pour que votre lancement soit une réussite éclatante.</p>\n    </section>\n\n    <footer>\n        <p>© 2023 Générateur d'Idées. Tous droits réservés.</p>\n    </footer>\n\n    <script>\n        document.getElementById('tool-form').addEventListener('submit', function(e) {\n            e.preventDefault();\n\n            const secteur = document.getElementById('secteur').value;\n            const motsCles = document.getElementById('motsCles').value.split(',').map(s => s.trim()).filter(Boolean);\n            const publicCible = document.getElementById('publicCible').value;\n            const tonalite = document.getElementById('tonalite').value;\n\n            const resultDiv = document.getElementById('tool-result');\n            const resultContent = document.getElementById('result-content');\n            resultContent.innerHTML = '';\n            resultDiv.style.display = 'block';\n\n            function capitalizeFirstLetter(string) {\n                return string.charAt(0).toUpperCase() + string.slice(1);\n            }\n\n            const baseName = secteur.split(' ')[0] ? capitalizeFirstLetter(secteur.split(' ')[0]) : 'Startup';\n            const keyWord = motsCles[0] ? capitalizeFirstLetter(motsCles[0]) : 'Innovation';\n\n            const names = {\n                \"Sérieux et professionnel\": [\n                    `${baseName} Solutions`,\n                    `Stratégie ${capitalizeFirstLetter(secteur.split(' ')[0])}`,\n                    `Expertise ${keyWord}`,\n                    `Cabinet ${capitalizeFirstLetter(secteur.split(' ')[0])}`,\n                    `${keyWord} & Associés`\n                ],\n                \"Créatif et innovant\": [\n                    `L'Atelier de ${keyWord}`,\n                    `Éclosion ${baseName}`,\n                    `Synapse ${capitalizeFirstLetter(secteur.split(' ')[0])}`,\n                    `Vision ${keyWord}`,\n                    `Créa${capitalizeFirstLetter(secteur.split(' ')[0])}`\n                ],\n                \"Amical et accessible\": [\n                    `Vos services ${keyWord}`,\n                    `La Fabrique de ${capitalizeFirstLetter(secteur.split(' ')[0])}`,\n                    `Connect ${keyWord}`,\n                    `Le Coin de ${baseName}`,\n                    `Simplement ${keyWord}`\n                ],\n                \"Dynamique et moderne\": [\n                    `Pulsar ${keyWord}`,\n                    `Nova ${capitalizeFirstLetter(secteur.split(' ')[0])}`,\n                    `NextGen ${baseName}`,\n                    `Boost ${keyWord}`,\n                    `Accel ${capitalizeFirstLetter(secteur.split(' ')[0])}`\n                ],\n                \"Élégant et luxueux\": [\n                    `Maison ${keyWord}`,\n                    `Atelier ${baseName} Prestige`,\n                    `Signature ${capitalizeFirstLetter(secteur.split(' ')[0])}`,\n                    `L'Éclat ${keyWord}`,\n                    `Privilège ${baseName}`\n                ],\n                \"Ludique et amusant\": [\n                    `La Récré de ${keyWord}`,\n                    `Bulles & Idées ${capitalizeFirstLetter(secteur.split(' ')[0])}`,\n                    `Le Labo ${keyWord}`,\n                    `Zest de ${baseName}`,\n                    `Kif ${keyWord}`\n                ]\n            };\n\n            const slogans = {\n                \"Sérieux et professionnel\": [\n                    `L'excellence au service de votre ${secteur}.`,\n                    `Votre partenaire stratégique pour une croissance durable.`,\n                    `Des solutions fiables pour des résultats concrets.`,\n                    `L'expertise qui fait la différence dans le ${secteur}.`,\n                    `Engagés pour votre succès.`\n                ],\n                \"Créatif et innovant\": [\n                    `Réinventons le ${secteur} ensemble.`,\n                    `Là où les idées prennent vie.`,\n                    `L'innovation au cœur de votre projet.`,\n                    `Découvrez le futur du ${secteur}.`,\n                    `Éveillez votre potentiel.`\n                ],\n                \"Amical et accessible\": [\n                    `Simplifions votre ${secteur}, ensemble.`,\n                    `Votre projet, notre priorité.`,\n                    `Proximité et efficacité pour tous.`,\n                    `Le ${secteur} à votre portée.`,\n                    `Avec vous, à chaque étape.`\n                ],\n                \"Dynamique et moderne\": [\n                    `Accélérez votre impact dans le ${secteur}.`,\n                    `L'avenir du ${secteur} commence ici.`,\n                    `Connecté. Efficace. Inspirant.`,\n                    `Le dynamisme au service de vos ambitions.`,\n                    `Propulsez votre marque.`\n                ],\n                \"Élégant et luxueux\": [\n                    `L'art de l'exception dans le ${secteur}.`,\n                    `L'élégance redéfinie.`,\n                    `Une signature de prestige pour votre ${secteur}.`,\n                    `Expérience exclusive, résultats raffinés.`,\n                    `Le luxe discret de l'efficacité.`\n                ],\n                \"Ludique et amusant\": [\n                    `Le ${secteur} comme vous ne l'avez jamais imaginé !`,\n                    `Créer, c'est s'amuser.`,\n                    `Des idées pétillantes pour un ${secteur} joyeux.`,\n                    `L'innovation avec un sourire.`,\n                    `Faites le plein de bonnes ondes !`\n                ]\n            };\n\n            function generateResults(groupName, items) {\n                const groupDiv = document.createElement('div');\n                groupDiv.className = 'result-group';\n                groupDiv.innerHTML = `<h4>${groupName}</h4>`;\n                const ul = document.createElement('ul');\n                ul.className = 'result-list';\n                items.forEach(item => {\n                    const li = document.createElement('li');\n                    li.textContent = item;\n                    ul.appendChild(li);\n                });\n                groupDiv.appendChild(ul);\n                return groupDiv;\n            }\n\n            const currentTonalite = document.getElementById('tonalite').options[document.getElementById('tonalite').selectedIndex].text;\n\n            // Noms d'entreprise\n            const nameSuggestions = names[currentTonalite] || names[\"Sérieux et professionnel\"];\n            resultContent.appendChild(generateResults(\"Noms d'entreprise\", nameSuggestions));\n\n            // Slogans\n            const sloganSuggestions = slogans[currentTonalite] || slogans[\"Sérieux et professionnel\"];\n            resultContent.appendChild(generateResults(\"Slogans\", sloganSuggestions));\n\n            // Slogans alternatifs basés sur les mots-clés\n            if (motsCles.length > 0) {\n                const altSlogans = motsCles.slice(0, 2).map(mot => `Pour un ${secteur} plus ${mot}.`).concat(\n                    motsCles.slice(0, 1).map(mot => `Votre succès est notre ${mot} motivation.`)\n                );\n                if (altSlogans.length > 0) {\n                    resultContent.appendChild(generateResults(\"Slogans orientés mots-clés\", altSlogans));\n                }\n            }\n\n            // Slogans orientés public cible (si détaillé)\n            if (publicCible.length > 20) {\n                const targetSlogans = [\n                    `Conçu pour les ${publicCible.split(' ')[0]} exigeants.`,\n                    `La solution ${keyWord} que les ${publicCible.split(' ')[0]} attendaient.`\n                ];\n                resultContent.appendChild(generateResults(\"Slogans ciblés\", targetSlogans));\n            }\n        });\n    </script>\n<div id=\"qa-smoke-result\" hidden></div>\n<script id=\"farmbuilder-affiliate-helper\">\n(function () {\n  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};\n  document.addEventListener(\"click\", function (event) {\n    const target = event.target.closest(\"[data-affiliate-slot]\");\n    if (!target) return;\n    const slot = target.getAttribute(\"data-affiliate-slot\");\n    const href = window.__UTILITY_AFFILIATE_MAP[slot];\n    if (!href) return;\n    if (target.tagName && target.tagName.toLowerCase() === \"a\") {\n      target.setAttribute(\"href\", href);\n      target.setAttribute(\"rel\", \"nofollow sponsored noopener noreferrer\");\n      return;\n    }\n    event.preventDefault();\n    window.open(href, \"_blank\", \"noopener\");\n  }, true);\n})();\n</script>\n<script id=\"farmbuilder-functional-qa\">\n(function () {\n  function marker() {\n    let node = document.getElementById(\"qa-smoke-result\");\n    if (node) return node;\n    node = document.createElement(\"div\");\n    node.id = \"qa-smoke-result\";\n    node.hidden = true;\n    document.body.appendChild(node);\n    return node;\n  }\n\n  let qaFinished = false;\n  let qaWatchdog = null;\n\n  function normalize(text) {\n    return String(text || \"\").replace(/\\s+/g, \" \").trim();\n  }\n\n  function findForm() {\n    return document.getElementById(\"tool-form\") || document.querySelector(\"form\");\n  }\n\n  function findResult() {\n    return (\n      document.getElementById(\"tool-result\") ||\n      document.querySelector(\"[data-result]\") ||\n      document.querySelector(\".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis\")\n    );\n  }\n\n  function primaryAction(form) {\n    if (!form) return null;\n    return (\n      document.getElementById(\"tool-submit\") ||\n      form.querySelector(\"#tool-submit\") ||\n      form.querySelector(\"[data-primary-action]\") ||\n      form.querySelector(\"button[type=submit]\") ||\n      form.querySelector(\"button\") ||\n      form.querySelector(\"input[type=submit]\")\n    );\n  }\n\n  function resultSignature(node) {\n    if (!node) return \"\";\n    const text = normalize(node.textContent);\n    const html = normalize(node.innerHTML).slice(0, 600);\n    return `${text}||${html}`;\n  }\n\n  function resultHeadline(node) {\n    if (!node) return \"\";\n    const heading = node.querySelector(\"h1, h2, h3, strong, b\");\n    return normalize(heading ? heading.textContent : \"\");\n  }\n\n  function sampleText(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"} ${field.placeholder || \"\"}`.toLowerCase();\n    if (/email/.test(key)) return \"bonjour@example.com\";\n    if (/url|site|website|lien/.test(key)) return \"https://example.com/offre-solaire\";\n    if (/phone|tel|mobile/.test(key)) return \"0612345678\";\n    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return \"Paris\";\n    if (/orientation/.test(key)) return \"sud\";\n    if (/keyword|theme|topic|sujet|subject/.test(key)) return \"energie solaire domestique\";\n    if (/titre|title/.test(key)) return \"Simulateur solaire maison\";\n    if (/nom|name|project/.test(key)) return \"Projet Horizon\";\n    if (/description|notes|content|message/.test(key)) return \"Maison individuelle exposee sud avec toiture exploitable.\";\n    return field.placeholder || \"France\";\n  }\n\n  function sampleNumber(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"}`.toLowerCase();\n    if (/inclinaison|angle|slope/.test(key)) return \"30\";\n    if (/surface|size|m2|sqm/.test(key)) return \"28\";\n    if (/annee|year/.test(key)) return \"2024\";\n    if (/prix|price|budget|cost|amount|montant/.test(key)) return \"12000\";\n    const min = Number(field.min || \"\");\n    const max = Number(field.max || \"\");\n    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {\n      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));\n    }\n    if (Number.isFinite(min)) return String(Math.max(min, 12));\n    if (Number.isFinite(max)) return String(Math.min(max, 12));\n    return field.value || \"12\";\n  }\n\n  function applySample(field) {\n    const tag = (field.tagName || \"\").toLowerCase();\n    const type = (field.type || \"\").toLowerCase();\n    if (field.disabled) return;\n    if (type === \"hidden\" || type === \"submit\" || type === \"button\" || type === \"reset\" || type === \"image\" || type === \"file\") {\n      return;\n    }\n    if (tag === \"select\") {\n      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];\n      if (option) field.value = option.value;\n      return;\n    }\n    if (type === \"checkbox\") {\n      field.checked = true;\n      return;\n    }\n    if (type === \"radio\") {\n      field.checked = true;\n      return;\n    }\n    if (type === \"date\") {\n      field.value = \"2026-03-01\";\n      return;\n    }\n    if (type === \"email\") {\n      field.value = \"bonjour@example.com\";\n      return;\n    }\n    if (type === \"url\") {\n      field.value = \"https://example.com/offre-solaire\";\n      return;\n    }\n    if (type === \"tel\") {\n      field.value = \"0612345678\";\n      return;\n    }\n    if (type === \"color\") {\n      field.value = \"#2f855a\";\n      return;\n    }\n    if (type === \"number\" || type === \"range\") {\n      field.value = sampleNumber(field);\n      return;\n    }\n    field.value = sampleText(field);\n  }\n\n  function stamp(status, detail, headline, primary) {\n    if (qaFinished) return;\n    qaFinished = true;\n    if (qaWatchdog) {\n      window.clearTimeout(qaWatchdog);\n      qaWatchdog = null;\n    }\n    const node = marker();\n    node.dataset.status = status;\n    node.dataset.mode = \"native-form\";\n    node.dataset.detail = detail || \"\";\n    node.dataset.headline = headline || \"\";\n    node.dataset.primary = primary || \"\";\n    node.dataset.viewport = window.innerWidth <= 640 ? \"mobile\" : \"desktop\";\n    window.setTimeout(function () {\n      try {\n        window.stop();\n      } catch (_error) {}\n    }, 0);\n  }\n\n  function installModalGuards() {\n    const noop = function () {};\n    const approve = function () { return true; };\n    const empty = function () { return \"\"; };\n    try { window.alert = noop; } catch (_error) {}\n    try { window.confirm = approve; } catch (_error) {}\n    try { window.prompt = empty; } catch (_error) {}\n  }\n\n  function triggerAction(form, action) {\n    try {\n      if (typeof form.requestSubmit === \"function\") {\n        form.requestSubmit(action || undefined);\n        return;\n      }\n    } catch (_error) {}\n    if (action && typeof action.click === \"function\") {\n      action.click();\n      return;\n    }\n    form.dispatchEvent(new Event(\"submit\", { bubbles: true, cancelable: true }));\n  }\n\n  function inspectResult(before, attemptsLeft) {\n    const result = findResult();\n    if (!result) {\n      stamp(\"fail\", \"La zone de resultat est introuvable.\", \"\");\n      return;\n    }\n    const after = resultSignature(result);\n    const text = normalize(result.textContent);\n    if (after && after !== before && text.length >= 24) {\n      const primary = result.querySelector(\"a[href], button[data-href], [data-primary-url]\") || document.querySelector(\"#tool-result a[href]\");\n      stamp(\"pass\", \"Le formulaire natif a mis a jour la zone de resultat.\", resultHeadline(result), primary ? (primary.getAttribute(\"href\") || primary.getAttribute(\"data-primary-url\") || \"\") : \"\");\n      return;\n    }\n    if (attemptsLeft > 0) {\n      window.setTimeout(function () {\n        inspectResult(before, attemptsLeft - 1);\n      }, 250);\n      return;\n    }\n    stamp(\"fail\", \"La zone de resultat n'a pas renvoye de contenu exploitable.\", resultHeadline(result));\n  }\n\n  function runSmoke() {\n    const params = new URLSearchParams(window.location.search);\n    if (params.get(\"__qa\") !== \"functional\") return;\n    qaWatchdog = window.setTimeout(function () {\n      stamp(\"fail\", \"QA smoke timed out before the page reported a usable result.\", \"\");\n    }, 7000);\n    const form = findForm();\n    if (!form) {\n      stamp(\"fail\", \"Le formulaire principal est introuvable.\", \"\");\n      return;\n    }\n    const result = findResult();\n    const before = resultSignature(result);\n    installModalGuards();\n    try {\n      form.querySelectorAll(\"input, select, textarea\").forEach(applySample);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke sample failed: ${error.message}` : \"QA smoke sample failed before submit.\", \"\");\n      return;\n    }\n    const action = primaryAction(form);\n    try {\n      triggerAction(form, action);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke submit failed: ${error.message}` : \"QA smoke submit failed.\", \"\");\n      return;\n    }\n    inspectResult(before, 10);\n  }\n\n  window.addEventListener(\"error\", function (event) {\n    const message = event && event.message ? event.message : \"JavaScript runtime error during QA smoke.\";\n    stamp(\"fail\", `QA smoke JS error: ${message}`, \"\");\n  }, { once: true });\n\n  window.addEventListener(\"unhandledrejection\", function (event) {\n    const reason = event && event.reason;\n    const detail = typeof reason === \"string\"\n      ? reason\n      : reason && reason.message\n        ? reason.message\n        : \"Unhandled promise rejection during QA smoke.\";\n    stamp(\"fail\", `QA smoke rejection: ${detail}`, \"\");\n  }, { once: true });\n\n  if (document.readyState === \"loading\") {\n    document.addEventListener(\"DOMContentLoaded\", function () {\n      window.setTimeout(runSmoke, 60);\n    }, { once: true });\n  } else {\n    window.setTimeout(runSmoke, 60);\n  }\n})();\n</script>\n</body>\n</html>",
+    "generation_mode": "direct_html"
+  }
+}
