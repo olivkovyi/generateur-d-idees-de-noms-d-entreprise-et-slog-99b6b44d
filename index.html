@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur d&#x27;Idées de Noms d&#x27;Entreprise et Slogans Originaux | Votre Idée en quelques mots</title>
+    <meta name="description" content="Trouvez le nom parfait pour votre startup ou nouvelle activité, et générez des slogans accrocheurs pour marquer les esprits.">
+    <style>
+        :root {
+            --color-primary: #5A67D8;
+            --color-primary-light: #C3DAFE;
+            --color-secondary: #EDF2F7;
+            --color-text: #2D3748;
+            --color-background: #F7FAFC;
+            --color-border: #E2E8F0;
+            --font-family-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            --font-family-mono: 'SF Mono', 'Roboto Mono', monospace;
+            --spacing-unit: 8px;
+        }
+
+        body {
+            font-family: var(--font-family-sans);
+            color: var(--color-text);
+            background-color: var(--color-background);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--color-primary);
+            color: white;
+            padding: calc(4 * var(--spacing-unit)) calc(2 * var(--spacing-unit));
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-unit);
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: calc(4 * var(--spacing-unit)) auto;
+            padding: 0 calc(2 * var(--spacing-unit));
+            flex-grow: 1;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            padding: calc(4 * var(--spacing-unit));
+            margin-bottom: calc(4 * var(--spacing-unit));
+            border: 1px solid var(--color-border);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--color-primary);
+            margin-top: 0;
+            margin-bottom: calc(3 * var(--spacing-unit));
+            border-bottom: 2px solid var(--color-primary-light);
+            padding-bottom: var(--spacing-unit);
+        }
+
+        .form-group {
+            margin-bottom: calc(2 * var(--spacing-unit));
+        }
+
+        label {
+            display: block;
+            margin-bottom: var(--spacing-unit);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: calc(1.5 * var(--spacing-unit));
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: var(--font-family-sans);
+            box-sizing: border-box;
+            transition: border-color 0.2s ease;
+        }
+
+        input[type="text"]:focus,
+        textarea:focus,
+        select:focus {
+            border-color: var(--color-primary);
+            outline: none;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: var(--color-primary);
+            color: white;
+            padding: calc(1.5 * var(--spacing-unit)) calc(3 * var(--spacing-unit));
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button:hover {
+            background-color: #4A55B8;
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        .result-area {
+            margin-top: calc(4 * var(--spacing-unit));
+            padding-top: calc(4 * var(--spacing-unit));
+            border-top: 1px dashed var(--color-border);
+        }
+
+        .result-area h3 {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-bottom: calc(2 * var(--spacing-unit));
+        }
+
+        .result-group {
+            margin-bottom: calc(3 * var(--spacing-unit));
+        }
+
+        .result-group h4 {
+            font-size: 1.2rem;
+            color: var(--color-text);
+            margin-bottom: var(--spacing-unit);
+            position: relative;
+            padding-left: calc(2 * var(--spacing-unit));
+        }
+        .result-group h4::before {
+            content: '›';
+            position: absolute;
+            left: 0;
+            color: var(--color-primary);
+            font-weight: bold;
+        }
+
+        .result-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .result-list li {
+            background-color: var(--color-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            padding: calc(1.5 * var(--spacing-unit));
+            margin-bottom: var(--spacing-unit);
+            font-family: var(--font-family-mono);
+            font-size: 0.95rem;
+            word-break: break-word;
+        }
+
+        footer {
+            background-color: var(--color-text);
+            color: white;
+            padding: calc(4 * var(--spacing-unit)) calc(2 * var(--spacing-unit));
+            margin-top: calc(8 * var(--spacing-unit));
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .seo-section {
+            padding: calc(4 * var(--spacing-unit)) calc(2 * var(--spacing-unit));
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 0.9rem;
+            color: #4A5568;
+            line-height: 1.8;
+            background-color: var(--color-background);
+        }
+
+        .seo-section h3 {
+            color: var(--color-primary);
+            font-size: 1.5rem;
+            margin-bottom: calc(2 * var(--spacing-unit));
+            text-align: center;
+        }
+
+        .seo-section p {
+            margin-bottom: calc(1.5 * var(--spacing-unit));
+        }
+
+        .seo-section ul {
+            list-style: disc inside;
+            padding-left: 0;
+            margin-bottom: calc(1.5 * var(--spacing-unit));
+        }
+
+        .seo-section li {
+            margin-bottom: var(--spacing-unit);
+        }
+    </style>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://generateur-d-idees-de-noms-d-entreprise-et-slog-99b6b44d.onrender.com">
+    <meta property="og:title" content="Générateur d&#x27;Idées de Noms d&#x27;Entreprise et Slogans Originaux">
+    <meta property="og:description" content="Trouvez le nom parfait pour votre startup ou nouvelle activité, et générez des slogans accrocheurs pour marquer les esprits.">
+    <meta property="og:url" content="https://generateur-d-idees-de-noms-d-entreprise-et-slog-99b6b44d.onrender.com">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Générateur d'Idées de Noms d'Entreprise et Slogans Originaux", "description": "Trouvez le nom parfait pour votre startup ou nouvelle activité, et générez des slogans accrocheurs pour marquer les esprits.", "url": "https://generateur-d-idees-de-noms-d-entreprise-et-slog-99b6b44d.onrender.com", "applicationCategory": "UtilityApplication", "operatingSystem": "Web Browser"}</script>
+</head>
+<body data-site-slug="generateur-d-idees-de-noms-d-entreprise-et-slog-99b6b44d" data-runtime-mode="slogan_generator">
+    <header>
+        <h1>Lancez Votre Marque avec un Nom qui Compte</h1>
+        <p>Trouvez le nom parfait pour votre startup ou nouvelle activité, et générez des slogans accrocheurs pour marquer les esprits.</p>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Votre Idée en quelques mots</h2>
+            <form id="tool-form">
+                <div class="form-group">
+                    <label for="secteur">Quel est votre secteur d'activité ?</label>
+                    <input type="text" id="secteur" placeholder="Ex: e-commerce de produits artisanaux, agence de marketing digital..." required>
+                </div>
+                <div class="form-group">
+                    <label for="motsCles">Mots-clés ou concepts clés (séparés par des virgules) :</label>
+                    <input type="text" id="motsCles" placeholder="Ex: durable, innovation, local, simple, joyeux">
+                </div>
+                <div class="form-group">
+                    <label for="publicCible">Décrivez votre public cible :</label>
+                    <textarea id="publicCible" placeholder="Ex: jeunes urbains soucieux de l'environnement, PME traditionnelles, familles avec enfants en bas âge..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="tonalite">Quelle tonalité souhaitez-vous pour votre marque ?</label>
+                    <select id="tonalite">
+                        <option value="professionnel">Professionnel et sérieux</option>
+                        <option value="creatif">Créatif et innovant</option>
+                        <option value="amical">Amical et accessible</option>
+                        <option value="dynamique">Dynamique et moderne</option>
+                        <option value="luxe">Élégant et luxueux</option>
+                        <option value="ludique">Ludique et amusant</option>
+                    </select>
+                </div>
+                <button type="submit" id="tool-submit">Générer les Idées</button>
+            </form>
+        </section>
+
+        <section class="section result-area" id="tool-result" style="display: none;">
+            <h2 id="result-headline">Vos Idées de Noms et Slogans</h2>
+            <div id="result-content"></div>
+        </section>
+    </main>
+
+    <section class="seo-section">
+        <h3>Pourquoi un nom et un slogan percutants sont essentiels pour votre entreprise ?</h3>
+        <p>Dans l'écosystème entrepreneurial français, se démarquer est une nécessité. Un nom d'entreprise mémorable et un slogan accrocheur ne sont pas de simples détails esthétiques ; ils sont le fondement de votre identité de marque, le premier point de contact avec vos clients potentiels et un pilier de votre stratégie marketing.</p>
+        <p>Un bon nom d'entreprise doit être :</p>
+        <ul>
+            <li><strong>Unique et disponible :</strong> Pour éviter les confusions et les problèmes juridiques, et garantir une présence en ligne sans heurts (nom de domaine, réseaux sociaux).</li>
+            <li><strong>Mémorable :</strong> Facile à retenir et à prononcer, il doit rester gravé dans l'esprit de vos clients.</li>
+            <li><strong>Pertinent :</strong> Il doit évoquer votre activité, vos valeurs ou les bénéfices que vous apportez.</li>
+            <li><strong>Évolutif :</strong> Assez large pour accompagner la croissance et les éventuelles diversifications de votre offre.</li>
+        </ul>
+        <p>Quant au slogan, c'est la promesse de votre marque en quelques mots. Il clarifie votre proposition de valeur, communique votre positionnement et insuffle de la personnalité à votre entreprise. Qu'il soit informatif, émotionnel ou incitatif, un bon slogan renforce la reconnaissance de votre marque et engage votre audience.</p>
+        <p>Notre générateur vous aide à naviguer dans ce processus créatif, en vous offrant des pistes innovantes adaptées au marché français, pour que votre lancement soit une réussite éclatante.</p>
+    </section>
+
+    <footer>
+        <p>© 2023 Générateur d'Idées. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        document.getElementById('tool-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const secteur = document.getElementById('secteur').value;
+            const motsCles = document.getElementById('motsCles').value.split(',').map(s => s.trim()).filter(Boolean);
+            const publicCible = document.getElementById('publicCible').value;
+            const tonalite = document.getElementById('tonalite').value;
+
+            const resultDiv = document.getElementById('tool-result');
+            const resultContent = document.getElementById('result-content');
+            resultContent.innerHTML = '';
+            resultDiv.style.display = 'block';
+
+            function capitalizeFirstLetter(string) {
+                return string.charAt(0).toUpperCase() + string.slice(1);
+            }
+
+            const baseName = secteur.split(' ')[0] ? capitalizeFirstLetter(secteur.split(' ')[0]) : 'Startup';
+            const keyWord = motsCles[0] ? capitalizeFirstLetter(motsCles[0]) : 'Innovation';
+
+            const names = {
+                "Sérieux et professionnel": [
+                    `${baseName} Solutions`,
+                    `Stratégie ${capitalizeFirstLetter(secteur.split(' ')[0])}`,
+                    `Expertise ${keyWord}`,
+                    `Cabinet ${capitalizeFirstLetter(secteur.split(' ')[0])}`,
+                    `${keyWord} & Associés`
+                ],
+                "Créatif et innovant": [
+                    `L'Atelier de ${keyWord}`,
+                    `Éclosion ${baseName}`,
+                    `Synapse ${capitalizeFirstLetter(secteur.split(' ')[0])}`,
+                    `Vision ${keyWord}`,
+                    `Créa${capitalizeFirstLetter(secteur.split(' ')[0])}`
+                ],
+                "Amical et accessible": [
+                    `Vos services ${keyWord}`,
+                    `La Fabrique de ${capitalizeFirstLetter(secteur.split(' ')[0])}`,
+                    `Connect ${keyWord}`,
+                    `Le Coin de ${baseName}`,
+                    `Simplement ${keyWord}`
+                ],
+                "Dynamique et moderne": [
+                    `Pulsar ${keyWord}`,
+                    `Nova ${capitalizeFirstLetter(secteur.split(' ')[0])}`,
+                    `NextGen ${baseName}`,
+                    `Boost ${keyWord}`,
+                    `Accel ${capitalizeFirstLetter(secteur.split(' ')[0])}`
+                ],
+                "Élégant et luxueux": [
+                    `Maison ${keyWord}`,
+                    `Atelier ${baseName} Prestige`,
+                    `Signature ${capitalizeFirstLetter(secteur.split(' ')[0])}`,
+                    `L'Éclat ${keyWord}`,
+                    `Privilège ${baseName}`
+                ],
+                "Ludique et amusant": [
+                    `La Récré de ${keyWord}`,
+                    `Bulles & Idées ${capitalizeFirstLetter(secteur.split(' ')[0])}`,
+                    `Le Labo ${keyWord}`,
+                    `Zest de ${baseName}`,
+                    `Kif ${keyWord}`
+                ]
+            };
+
+            const slogans = {
+                "Sérieux et professionnel": [
+                    `L'excellence au service de votre ${secteur}.`,
+                    `Votre partenaire stratégique pour une croissance durable.`,
+                    `Des solutions fiables pour des résultats concrets.`,
+                    `L'expertise qui fait la différence dans le ${secteur}.`,
+                    `Engagés pour votre succès.`
+                ],
+                "Créatif et innovant": [
+                    `Réinventons le ${secteur} ensemble.`,
+                    `Là où les idées prennent vie.`,
+                    `L'innovation au cœur de votre projet.`,
+                    `Découvrez le futur du ${secteur}.`,
+                    `Éveillez votre potentiel.`
+                ],
+                "Amical et accessible": [
+                    `Simplifions votre ${secteur}, ensemble.`,
+                    `Votre projet, notre priorité.`,
+                    `Proximité et efficacité pour tous.`,
+                    `Le ${secteur} à votre portée.`,
+                    `Avec vous, à chaque étape.`
+                ],
+                "Dynamique et moderne": [
+                    `Accélérez votre impact dans le ${secteur}.`,
+                    `L'avenir du ${secteur} commence ici.`,
+                    `Connecté. Efficace. Inspirant.`,
+                    `Le dynamisme au service de vos ambitions.`,
+                    `Propulsez votre marque.`
+                ],
+                "Élégant et luxueux": [
+                    `L'art de l'exception dans le ${secteur}.`,
+                    `L'élégance redéfinie.`,
+                    `Une signature de prestige pour votre ${secteur}.`,
+                    `Expérience exclusive, résultats raffinés.`,
+                    `Le luxe discret de l'efficacité.`
+                ],
+                "Ludique et amusant": [
+                    `Le ${secteur} comme vous ne l'avez jamais imaginé !`,
+                    `Créer, c'est s'amuser.`,
+                    `Des idées pétillantes pour un ${secteur} joyeux.`,
+                    `L'innovation avec un sourire.`,
+                    `Faites le plein de bonnes ondes !`
+                ]
+            };
+
+            function generateResults(groupName, items) {
+                const groupDiv = document.createElement('div');
+                groupDiv.className = 'result-group';
+                groupDiv.innerHTML = `<h4>${groupName}</h4>`;
+                const ul = document.createElement('ul');
+                ul.className = 'result-list';
+                items.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = item;
+                    ul.appendChild(li);
+                });
+                groupDiv.appendChild(ul);
+                return groupDiv;
+            }
+
+            const currentTonalite = document.getElementById('tonalite').options[document.getElementById('tonalite').selectedIndex].text;
+
+            // Noms d'entreprise
+            const nameSuggestions = names[currentTonalite] || names["Sérieux et professionnel"];
+            resultContent.appendChild(generateResults("Noms d'entreprise", nameSuggestions));
+
+            // Slogans
+            const sloganSuggestions = slogans[currentTonalite] || slogans["Sérieux et professionnel"];
+            resultContent.appendChild(generateResults("Slogans", sloganSuggestions));
+
+            // Slogans alternatifs basés sur les mots-clés
+            if (motsCles.length > 0) {
+                const altSlogans = motsCles.slice(0, 2).map(mot => `Pour un ${secteur} plus ${mot}.`).concat(
+                    motsCles.slice(0, 1).map(mot => `Votre succès est notre ${mot} motivation.`)
+                );
+                if (altSlogans.length > 0) {
+                    resultContent.appendChild(generateResults("Slogans orientés mots-clés", altSlogans));
+                }
+            }
+
+            // Slogans orientés public cible (si détaillé)
+            if (publicCible.length > 20) {
+                const targetSlogans = [
+                    `Conçu pour les ${publicCible.split(' ')[0]} exigeants.`,
+                    `La solution ${keyWord} que les ${publicCible.split(' ')[0]} attendaient.`
+                ];
+                resultContent.appendChild(generateResults("Slogans ciblés", targetSlogans));
+            }
+        });
+    </script>
+<div id="qa-smoke-result" hidden></div>
+<script id="farmbuilder-affiliate-helper">
+(function () {
+  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};
+  document.addEventListener("click", function (event) {
+    const target = event.target.closest("[data-affiliate-slot]");
+    if (!target) return;
+    const slot = target.getAttribute("data-affiliate-slot");
+    const href = window.__UTILITY_AFFILIATE_MAP[slot];
+    if (!href) return;
+    if (target.tagName && target.tagName.toLowerCase() === "a") {
+      target.setAttribute("href", href);
+      target.setAttribute("rel", "nofollow sponsored noopener noreferrer");
+      return;
+    }
+    event.preventDefault();
+    window.open(href, "_blank", "noopener");
+  }, true);
+})();
+</script>
+<script id="farmbuilder-functional-qa">
+(function () {
+  function marker() {
+    let node = document.getElementById("qa-smoke-result");
+    if (node) return node;
+    node = document.createElement("div");
+    node.id = "qa-smoke-result";
+    node.hidden = true;
+    document.body.appendChild(node);
+    return node;
+  }
+
+  let qaFinished = false;
+  let qaWatchdog = null;
+
+  function normalize(text) {
+    return String(text || "").replace(/\s+/g, " ").trim();
+  }
+
+  function findForm() {
+    return document.getElementById("tool-form") || document.querySelector("form");
+  }
+
+  function findResult() {
+    return (
+      document.getElementById("tool-result") ||
+      document.querySelector("[data-result]") ||
+      document.querySelector(".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis")
+    );
+  }
+
+  function primaryAction(form) {
+    if (!form) return null;
+    return (
+      document.getElementById("tool-submit") ||
+      form.querySelector("#tool-submit") ||
+      form.querySelector("[data-primary-action]") ||
+      form.querySelector("button[type=submit]") ||
+      form.querySelector("button") ||
+      form.querySelector("input[type=submit]")
+    );
+  }
+
+  function resultSignature(node) {
+    if (!node) return "";
+    const text = normalize(node.textContent);
+    const html = normalize(node.innerHTML).slice(0, 600);
+    return `${text}||${html}`;
+  }
+
+  function resultHeadline(node) {
+    if (!node) return "";
+    const heading = node.querySelector("h1, h2, h3, strong, b");
+    return normalize(heading ? heading.textContent : "");
+  }
+
+  function sampleText(field) {
+    const key = `${field.id || ""} ${field.name || ""} ${field.placeholder || ""}`.toLowerCase();
+    if (/email/.test(key)) return "bonjour@example.com";
+    if (/url|site|website|lien/.test(key)) return "https://example.com/offre-solaire";
+    if (/phone|tel|mobile/.test(key)) return "0612345678";
+    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return "Paris";
+    if (/orientation/.test(key)) return "sud";
+    if (/keyword|theme|topic|sujet|subject/.test(key)) return "energie solaire domestique";
+    if (/titre|title/.test(key)) return "Simulateur solaire maison";
+    if (/nom|name|project/.test(key)) return "Projet Horizon";
+    if (/description|notes|content|message/.test(key)) return "Maison individuelle exposee sud avec toiture exploitable.";
+    return field.placeholder || "France";
+  }
+
+  function sampleNumber(field) {
+    const key = `${field.id || ""} ${field.name || ""}`.toLowerCase();
+    if (/inclinaison|angle|slope/.test(key)) return "30";
+    if (/surface|size|m2|sqm/.test(key)) return "28";
+    if (/annee|year/.test(key)) return "2024";
+    if (/prix|price|budget|cost|amount|montant/.test(key)) return "12000";
+    const min = Number(field.min || "");
+    const max = Number(field.max || "");
+    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {
+      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));
+    }
+    if (Number.isFinite(min)) return String(Math.max(min, 12));
+    if (Number.isFinite(max)) return String(Math.min(max, 12));
+    return field.value || "12";
+  }
+
+  function applySample(field) {
+    const tag = (field.tagName || "").toLowerCase();
+    const type = (field.type || "").toLowerCase();
+    if (field.disabled) return;
+    if (type === "hidden" || type === "submit" || type === "button" || type === "reset" || type === "image" || type === "file") {
+      return;
+    }
+    if (tag === "select") {
+      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];
+      if (option) field.value = option.value;
+      return;
+    }
+    if (type === "checkbox") {
+      field.checked = true;
+      return;
+    }
+    if (type === "radio") {
+      field.checked = true;
+      return;
+    }
+    if (type === "date") {
+      field.value = "2026-03-01";
+      return;
+    }
+    if (type === "email") {
+      field.value = "bonjour@example.com";
+      return;
+    }
+    if (type === "url") {
+      field.value = "https://example.com/offre-solaire";
+      return;
+    }
+    if (type === "tel") {
+      field.value = "0612345678";
+      return;
+    }
+    if (type === "color") {
+      field.value = "#2f855a";
+      return;
+    }
+    if (type === "number" || type === "range") {
+      field.value = sampleNumber(field);
+      return;
+    }
+    field.value = sampleText(field);
+  }
+
+  function stamp(status, detail, headline, primary) {
+    if (qaFinished) return;
+    qaFinished = true;
+    if (qaWatchdog) {
+      window.clearTimeout(qaWatchdog);
+      qaWatchdog = null;
+    }
+    const node = marker();
+    node.dataset.status = status;
+    node.dataset.mode = "native-form";
+    node.dataset.detail = detail || "";
+    node.dataset.headline = headline || "";
+    node.dataset.primary = primary || "";
+    node.dataset.viewport = window.innerWidth <= 640 ? "mobile" : "desktop";
+    window.setTimeout(function () {
+      try {
+        window.stop();
+      } catch (_error) {}
+    }, 0);
+  }
+
+  function installModalGuards() {
+    const noop = function () {};
+    const approve = function () { return true; };
+    const empty = function () { return ""; };
+    try { window.alert = noop; } catch (_error) {}
+    try { window.confirm = approve; } catch (_error) {}
+    try { window.prompt = empty; } catch (_error) {}
+  }
+
+  function triggerAction(form, action) {
+    try {
+      if (typeof form.requestSubmit === "function") {
+        form.requestSubmit(action || undefined);
+        return;
+      }
+    } catch (_error) {}
+    if (action && typeof action.click === "function") {
+      action.click();
+      return;
+    }
+    form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+  }
+
+  function inspectResult(before, attemptsLeft) {
+    const result = findResult();
+    if (!result) {
+      stamp("fail", "La zone de resultat est introuvable.", "");
+      return;
+    }
+    const after = resultSignature(result);
+    const text = normalize(result.textContent);
+    if (after && after !== before && text.length >= 24) {
+      const primary = result.querySelector("a[href], button[data-href], [data-primary-url]") || document.querySelector("#tool-result a[href]");
+      stamp("pass", "Le formulaire natif a mis a jour la zone de resultat.", resultHeadline(result), primary ? (primary.getAttribute("href") || primary.getAttribute("data-primary-url") || "") : "");
+      return;
+    }
+    if (attemptsLeft > 0) {
+      window.setTimeout(function () {
+        inspectResult(before, attemptsLeft - 1);
+      }, 250);
+      return;
+    }
+    stamp("fail", "La zone de resultat n'a pas renvoye de contenu exploitable.", resultHeadline(result));
+  }
+
+  function runSmoke() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("__qa") !== "functional") return;
+    qaWatchdog = window.setTimeout(function () {
+      stamp("fail", "QA smoke timed out before the page reported a usable result.", "");
+    }, 7000);
+    const form = findForm();
+    if (!form) {
+      stamp("fail", "Le formulaire principal est introuvable.", "");
+      return;
+    }
+    const result = findResult();
+    const before = resultSignature(result);
+    installModalGuards();
+    try {
+      form.querySelectorAll("input, select, textarea").forEach(applySample);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke sample failed: ${error.message}` : "QA smoke sample failed before submit.", "");
+      return;
+    }
+    const action = primaryAction(form);
+    try {
+      triggerAction(form, action);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke submit failed: ${error.message}` : "QA smoke submit failed.", "");
+      return;
+    }
+    inspectResult(before, 10);
+  }
+
+  window.addEventListener("error", function (event) {
+    const message = event && event.message ? event.message : "JavaScript runtime error during QA smoke.";
+    stamp("fail", `QA smoke JS error: ${message}`, "");
+  }, { once: true });
+
+  window.addEventListener("unhandledrejection", function (event) {
+    const reason = event && event.reason;
+    const detail = typeof reason === "string"
+      ? reason
+      : reason && reason.message
+        ? reason.message
+        : "Unhandled promise rejection during QA smoke.";
+    stamp("fail", `QA smoke rejection: ${detail}`, "");
+  }, { once: true });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      window.setTimeout(runSmoke, 60);
+    }, { once: true });
+  } else {
+    window.setTimeout(runSmoke, 60);
+  }
+})();
+</script>
+</body>
+</html>
