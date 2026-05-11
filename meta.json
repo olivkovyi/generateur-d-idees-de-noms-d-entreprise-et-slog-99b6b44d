@@ -37,7 +37,7 @@
     "status": "published",
     "repo_name": "generateur-d-idees-de-noms-d-entreprise-et-slog-99b6b44d",
     "repo_url": "https://github.com/olivkovyi/generateur-d-idees-de-noms-d-entreprise-et-slog-99b6b44d",
-    "updated_at": 1778154733
+    "updated_at": 1778529070
   },
   "deployment": {
     "status": "ready",
@@ -45,16 +45,14 @@
     "service_id": "srv-d7e3gj3bc2fs73ebma70",
     "project_name": "generateur-d-idees-de-noms-d-entreprise-et-slog-99b6b44d",
     "requested_project_name": null,
-    "deployment_id": "dep-d7u7qm0sfn5c73cpbpm0",
+    "deployment_id": "dep-d81378d0lvsc7394gu50",
     "deployment_url": "https://generateur-d-idees-de-noms-d-entreprise.onrender.com",
     "public_url": "https://generateur-d-idees-de-noms-d-entreprise.onrender.com",
     "expected_public_url": "https://generateur-d-idees-de-noms-d-entreprise.onrender.com",
     "dashboard_url": "https://dashboard.render.com/static/srv-d7e3gj3bc2fs73ebma70",
     "ready_state": "live",
     "target": "production",
-    "updated_at": 1778154751,
-    "requested_public_url": "https://generateur-d-idees-de-noms-d-entreprise.onrender.com",
-    "url_source": "alias"
+    "updated_at": 1778529094
   },
   "qa": {
     "status": "pass",
@@ -394,5 +392,7 @@
     },
     "detail_synced_at": "2026-04-28T02:24:10.224972+00:00"
   },
-  "requested_url": "https://generateur-d-idees-de-noms-d-entreprise.onrender.com"
+  "requested_url": "https://generateur-d-idees-de-noms-d-entreprise.onrender.com",
+  "updated": "2026-05-11T19:51:34.211920+00:00",
+  "open_links_republished_at": "2026-05-11T19:51:34.211945+00:00"
 }
